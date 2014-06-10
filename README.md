@@ -7,7 +7,7 @@ This program is my application of everything I have taught myself about programm
 
 Changelog:
 
-v1.1
+  v1.1
   -Changed frame title to better reflect the nature of the project
   -Modified cellListener class to be more responsive
   -Made cell threat text larger
