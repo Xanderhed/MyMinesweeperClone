@@ -1,9 +1,10 @@
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
-
+import java.awt.Font;
 import java.awt.BorderLayout;
 import java.awt.Color;
+
 
 @SuppressWarnings("serial")
 public class cell extends JPanel {
@@ -52,7 +53,10 @@ public class cell extends JPanel {
 	public void setThreatLabel() {
 		
 		if(isMine) threatLabel.setText("BOOM!");
-		else if(threat > 0) threatLabel.setText(String.valueOf(threat));
+		else if(threat > 0) {
+			threatLabel.setFont(new Font("Arial", Font.BOLD, 20));
+			threatLabel.setText(String.valueOf(threat));
+		}
 		else threatLabel.setText("");
 	}
 	

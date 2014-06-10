@@ -23,7 +23,7 @@ public class cellListener extends MouseAdapter{
 	}
 	
 	//interface methods
-	public void mouseClicked(MouseEvent e) {
+	public void mousePressed(MouseEvent e) {
 		
 		if(SwingUtilities.isRightMouseButton(e) &&  cells[rowIndex][columnIndex].isActive()) cells[rowIndex][columnIndex].flipDanger();
 		else if(SwingUtilities.isLeftMouseButton(e) && cells[rowIndex][columnIndex].isActive()) {

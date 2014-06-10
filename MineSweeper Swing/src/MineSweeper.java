@@ -3,6 +3,7 @@ import javax.swing.SwingUtilities;
 import java.awt.BorderLayout;
 import java.awt.Container;
 
+//TODO add timer of some kind. Work on garbage collection. Able to change settings from UI or text file.
 @SuppressWarnings("serial")
 public class MineSweeper extends JFrame {
 
@@ -15,7 +16,7 @@ public class MineSweeper extends JFrame {
 	
 	public MineSweeper() {
 		
-		super("Mine Sweeper");
+		super(" Alex's Mine Sweeper Clone");
 		container = this.getContentPane();
 		this.setLayout(new BorderLayout());
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
